@@ -36,8 +36,8 @@ export function Footer() {
               <Image
                 src="/logogls.png"
                 alt="GLS Zonwering & Rolluiken"
-                width={300}
-                height={90}
+                width={2508}
+                height={627}
                 className="h-10 w-auto max-w-[180px] object-contain object-left"
                 sizes="180px"
               />

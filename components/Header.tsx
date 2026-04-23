@@ -64,7 +64,7 @@ export function Header() {
         }}
       />
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20 sm:h-24">
+          <div className="flex items-center justify-between h-20 sm:h-24 lg:h-28">
           {/* Logo — merk in header, hero zonder tweede logo; schaduw op foto leesbaar */}
           <Link
             href="/"
@@ -74,14 +74,14 @@ export function Header() {
             <Image
               src="/logogls.png"
               alt="GLS Zonwering & Rolluiken"
-              width={400}
-              height={120}
+              width={2508}
+              height={627}
               className={cn(
-                "h-11 w-auto sm:h-14 object-contain object-left max-w-[min(14rem,52vw)] sm:max-w-[17rem]",
+                "h-14 w-auto sm:h-20 lg:h-24 object-contain object-left max-w-[min(14rem,52vw)] sm:max-w-[22rem] lg:max-w-[30rem]",
                 onHomeHero && "drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]"
               )}
               priority
-              sizes="(max-width: 640px) 52vw, 17rem"
+              sizes="(max-width: 640px) 52vw, (max-width: 1024px) 20rem, 26rem"
             />
           </Link>
 

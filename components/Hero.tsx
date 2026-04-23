@@ -43,7 +43,7 @@ export function Hero() {
       </div>
 
       <div
-        className="relative z-10 mx-auto flex w-full max-w-7xl min-h-svh flex-col justify-center px-4 sm:px-6 pt-24 sm:pt-28 pb-16 sm:pb-20"
+        className="relative z-10 mx-auto flex w-full max-w-7xl min-h-svh flex-col justify-center px-4 sm:px-6 pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-20"
       >
         <div
           className={cn(
