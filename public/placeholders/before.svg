@@ -1,0 +1,94 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90D9"/>
+      <stop offset="100%" style="stop-color:#87CEEB"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8E0D5"/>
+      <stop offset="100%" style="stop-color:#D9D0C3"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A7D8F0"/>
+      <stop offset="30%" style="stop-color:#7BC8F0"/>
+      <stop offset="100%" style="stop-color:#5BB8E8"/>
+    </linearGradient>
+    <linearGradient id="sunGlare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="50%" style="stop-color:#FFE066" stop-opacity="0.4"/>
+      <stop offset="100%" style="stop-color:#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  
+  <!-- Sun with glare -->
+  <circle cx="680" cy="80" r="45" fill="#FFF176"/>
+  <circle cx="680" cy="80" r="60" fill="#FFF176" opacity="0.4"/>
+  <circle cx="680" cy="80" r="80" fill="#FFF176" opacity="0.2"/>
+  
+  <!-- Modern house structure -->
+  <rect x="100" y="180" width="600" height="350" fill="url(#wall)" filter="url(#shadow)"/>
+  
+  <!-- Roof overhang -->
+  <rect x="80" y="160" width="640" height="30" fill="#4A4A4A"/>
+  
+  <!-- Large window left - NO protection -->
+  <rect x="140" y="220" width="200" height="250" fill="#2C3E50" rx="2"/>
+  <rect x="145" y="225" width="190" height="240" fill="url(#glass)"/>
+  <!-- Window frame divisions -->
+  <rect x="145" y="340" width="190" height="4" fill="#4A4A4A"/>
+  <rect x="237" y="225" width="4" height="240" fill="#4A4A4A"/>
+  <!-- Sun glare on window -->
+  <rect x="145" y="225" width="190" height="240" fill="url(#sunGlare)"/>
+  <!-- Heat waves effect -->
+  <path d="M160 250 Q180 240 200 250 Q220 260 240 250" stroke="#FF6B35" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M170 280 Q190 270 210 280 Q230 290 250 280" stroke="#FF6B35" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M180 310 Q200 300 220 310 Q240 320 260 310" stroke="#FF6B35" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Large window right - NO protection -->
+  <rect x="460" y="220" width="200" height="250" fill="#2C3E50" rx="2"/>
+  <rect x="465" y="225" width="190" height="240" fill="url(#glass)"/>
+  <!-- Window frame divisions -->
+  <rect x="465" y="340" width="190" height="4" fill="#4A4A4A"/>
+  <rect x="557" y="225" width="4" height="240" fill="#4A4A4A"/>
+  <!-- Sun glare on window -->
+  <rect x="465" y="225" width="190" height="240" fill="url(#sunGlare)"/>
+  <!-- Heat waves effect -->
+  <path d="M480 250 Q500 240 520 250 Q540 260 560 250" stroke="#FF6B35" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M490 280 Q510 270 530 280 Q550 290 570 280" stroke="#FF6B35" stroke-width="2" fill="none" opacity="0.5"/>
+  
+  <!-- Door -->
+  <rect x="365" y="330" width="70" height="140" fill="#5D4037" rx="2"/>
+  <rect x="370" y="335" width="60" height="60" fill="#6D4C41"/>
+  <circle cx="420" cy="405" r="6" fill="#FFD700"/>
+  
+  <!-- Ground/terrace -->
+  <rect x="0" y="530" width="800" height="70" fill="#8D6E63"/>
+  <rect x="100" y="530" width="600" height="10" fill="#6D4C41"/>
+  
+  <!-- Warning indicators -->
+  <g transform="translate(200, 490)">
+    <circle r="20" fill="#FF5722" opacity="0.9"/>
+    <text x="0" y="6" font-family="Arial" font-size="20" fill="white" text-anchor="middle">!</text>
+  </g>
+  <text x="200" y="525" font-family="Arial" font-size="11" fill="#FF5722" text-anchor="middle" font-weight="bold">Te warm</text>
+  
+  <g transform="translate(520, 490)">
+    <circle r="20" fill="#FF5722" opacity="0.9"/>
+    <text x="0" y="6" font-family="Arial" font-size="20" fill="white" text-anchor="middle">!</text>
+  </g>
+  <text x="520" y="525" font-family="Arial" font-size="11" fill="#FF5722" text-anchor="middle" font-weight="bold">Geen privacy</text>
+  
+  <!-- Temperature indicator -->
+  <g transform="translate(50, 300)">
+    <rect x="0" y="0" width="30" height="100" rx="15" fill="#FFF" opacity="0.9"/>
+    <rect x="5" y="30" width="20" height="65" rx="10" fill="#FF5722"/>
+    <circle cx="15" cy="85" r="12" fill="#FF5722"/>
+    <text x="15" y="20" font-family="Arial" font-size="10" fill="#333" text-anchor="middle" font-weight="bold">32°</text>
+  </g>
+</svg>
