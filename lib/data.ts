@@ -330,13 +330,13 @@ export const steps: Step[] = [
 export const companyInfo = {
   name: "GLS Zonwering & Rolluiken",
   slogan: "U vraagt, wij plaatsen",
-  phone: "06 12345678",
+  phone: "06 29062094",
   email: "info@gls-zonwering.nl",
   region: "Gelderland / Brabant",
   address: {
-    street: "Zonweringstraat 1",
-    postalCode: "1234 AB",
-    city: "Nijmegen",
+    street: "De Huurinck 2",
+    postalCode: "6603 LZ",
+    city: "Wijchen",
   },
   socialMedia: {
     facebook: "https://facebook.com/glszonwering",
