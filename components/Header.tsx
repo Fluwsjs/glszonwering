@@ -71,19 +71,25 @@ export function Header() {
             className="flex items-center shrink-0 -my-1"
             aria-label="GLS Zonwering & Rolluiken - home"
           >
+            {/* Mobiel logo */}
+            <Image
+              src="/logomobile.png"
+              alt="GLS Zonwering & Rolluiken"
+              width={866}
+              height={288}
+              className="block sm:hidden h-14 w-auto object-contain object-left max-w-[56vw]"
+              priority
+              sizes="56vw"
+            />
+            {/* Desktop logo */}
             <Image
               src="/logogls.png"
               alt="GLS Zonwering & Rolluiken"
               width={2508}
               height={627}
-              className="h-16 w-auto sm:h-20 lg:h-24 object-contain object-left max-w-[min(60vw,16rem)] sm:max-w-[22rem] lg:max-w-[30rem]"
-              style={{
-                filter: onHomeHero
-                  ? "drop-shadow(0 0 6px rgba(255,255,255,0.95)) drop-shadow(0 2px 8px rgba(0,0,0,0.9))"
-                  : "drop-shadow(0 1px 3px rgba(0,0,0,0.25))",
-              }}
+              className="hidden sm:block h-20 lg:h-24 w-auto object-contain object-left max-w-[22rem] lg:max-w-[30rem]"
               priority
-              sizes="(max-width: 640px) 60vw, (max-width: 1024px) 22rem, 30rem"
+              sizes="(max-width: 1024px) 22rem, 30rem"
             />
           </Link>
 
