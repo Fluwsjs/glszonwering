@@ -76,12 +76,14 @@ export function Header() {
               alt="GLS Zonwering & Rolluiken"
               width={2508}
               height={627}
-              className={cn(
-                "h-14 w-auto sm:h-20 lg:h-24 object-contain object-left max-w-[min(14rem,52vw)] sm:max-w-[22rem] lg:max-w-[30rem]",
-                onHomeHero && "drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)]"
-              )}
+              className="h-16 w-auto sm:h-20 lg:h-24 object-contain object-left max-w-[min(60vw,16rem)] sm:max-w-[22rem] lg:max-w-[30rem]"
+              style={{
+                filter: onHomeHero
+                  ? "drop-shadow(0 0 6px rgba(255,255,255,0.95)) drop-shadow(0 2px 8px rgba(0,0,0,0.9))"
+                  : "drop-shadow(0 1px 3px rgba(0,0,0,0.25))",
+              }}
               priority
-              sizes="(max-width: 640px) 52vw, (max-width: 1024px) 20rem, 26rem"
+              sizes="(max-width: 640px) 60vw, (max-width: 1024px) 22rem, 30rem"
             />
           </Link>
 
