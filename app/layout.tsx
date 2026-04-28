@@ -3,7 +3,6 @@ import { Syne, DM_Sans } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import { ExitIntentPopup } from "@/components/ExitIntentPopup";
 import { CookieBanner } from "@/components/CookieBanner";
 import { GrainOverlay } from "@/components/GrainOverlay";
 import "./globals.css";
@@ -31,6 +30,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gls-zonwering.nl"),
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
   title: {
     default: "GLS Zonwering & Rolluiken | Specialist in Gelderland & Brabant",
     template: "%s | GLS Zonwering & Rolluiken",
@@ -92,7 +95,6 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <FloatingCTA />
-        <ExitIntentPopup />
         <CookieBanner />
       </body>
     </html>
