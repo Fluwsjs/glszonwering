@@ -73,11 +73,11 @@ export function Header() {
           >
             {/* Mobiel logo */}
             <Image
-              src="/logomob.png"
+              src="/logogls.png"
               alt="GLS Zonwering & Rolluiken"
-              width={1000}
-              height={250}
-              className="block sm:hidden h-12 w-auto object-contain object-left max-w-[62vw]"
+              width={2508}
+              height={627}
+              className="block sm:hidden h-24 w-auto object-contain object-left max-w-[80vw]"
               style={{
                 filter: onHomeHero ? "brightness(0) invert(1)" : "none",
                 transition: "filter 0.3s ease",
