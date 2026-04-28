@@ -151,11 +151,9 @@ export const products: Product[] = [
       "Onderhoudsarm",
       "Blijft werken bij stroomuitval",
     ],
-    image: "/placeholders/solar-motor.jpg",
+    image: "/solarmotoren/main.jpg",
     gallery: [
-      "/placeholders/solar-1.jpg",
-      "/placeholders/solar-2.jpg",
-      "/placeholders/solar-3.jpg",
+      "/solarmotoren/gallery-1.jpg",
     ],
     category: "solar",
   },
@@ -165,83 +163,21 @@ export const products: Product[] = [
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Villa met elektrische rolluiken",
-    location: "Nijmegen",
-    description:
-      "Complete installatie van 12 elektrische rolluiken met centrale bediening. Uitgevoerd in antraciet grijs, passend bij de moderne architectuur.",
-    image: "/placeholders/project-1.jpg",
+    title: "Hier komt een project",
+    location: "Hier komt een locatie",
+    description: "Hier komt een project",
+    image: "/rolluiken/main.jpg",
     category: "rolluiken",
     featured: true,
   },
   {
     id: "2",
-    title: "Appartementencomplex screens",
-    location: "Arnhem",
-    description:
-      "ZIP-screens voor 24 appartementen. Uniforme uitstraling met individuele bediening per unit.",
-    image: "/placeholders/project-2.jpg",
+    title: "Hier komt een project",
+    location: "Hier komt een locatie",
+    description: "Hier komt een project",
+    image: "/screens/main.jpg",
     category: "screens",
     featured: true,
-  },
-  {
-    id: "3",
-    title: "Terras overkapping met zonnescherm",
-    location: "Eindhoven",
-    description:
-      "Groot elektrisch zonnescherm van 6x4 meter met LED-verlichting en windautomaat.",
-    image: "/placeholders/project-3.jpg",
-    category: "zonneschermen",
-    featured: true,
-  },
-  {
-    id: "4",
-    title: "Renovatie met solar motoren",
-    location: "Den Bosch",
-    description:
-      "Bestaande handbediende rolluiken omgebouwd naar solar. Geen breekwerk, binnen één dag klaar.",
-    image: "/placeholders/project-4.jpg",
-    category: "solar",
-    featured: true,
-  },
-  {
-    id: "5",
-    title: "Nieuwbouwwoning complete zonwering",
-    location: "Oss",
-    description:
-      "Combinatie van screens aan de zuidgevel en zonnescherm op het terras. Alles elektrisch bedienbaar.",
-    image: "/placeholders/project-5.jpg",
-    category: "screens",
-    featured: false,
-  },
-  {
-    id: "6",
-    title: "Monumentaal pand met rolluiken",
-    location: "Zutphen",
-    description:
-      "Maatwerk rolluiken voor een monumentaal pand. Speciale kleur en montage in overleg met gemeente.",
-    image: "/placeholders/project-6.jpg",
-    category: "rolluiken",
-    featured: true,
-  },
-  {
-    id: "7",
-    title: "Moderne woning met ZIP-screens",
-    location: "Veenendaal",
-    description:
-      "Strakke ZIP-screens voor een moderne nieuwbouwwoning. Volledig geïntegreerd in de gevel.",
-    image: "/placeholders/project-7.jpg",
-    category: "screens",
-    featured: false,
-  },
-  {
-    id: "8",
-    title: "Horeca terras zonwering",
-    location: "Tilburg",
-    description:
-      "Groot knikarmscherm voor een horecaterras. Windvast en voorzien van volant.",
-    image: "/placeholders/project-8.jpg",
-    category: "zonneschermen",
-    featured: false,
   },
 ];
 

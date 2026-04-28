@@ -4,7 +4,6 @@ import { StatsCounter } from "@/components/StatsCounter";
 import { ProductsSection } from "@/components/ProductsSection";
 import { BeforeAfterSection } from "@/components/BeforeAfterSection";
 import { SolarSection } from "@/components/SolarSection";
-import { PriceCalculator } from "@/components/PriceCalculator";
 import { Steps } from "@/components/Steps";
 import { ProjectsGrid } from "@/components/ProjectsGrid";
 import { Reviews } from "@/components/Reviews";
@@ -31,9 +30,6 @@ export default function HomePage() {
 
       {/* Solar Motors Section */}
       <SolarSection />
-
-      {/* Price Calculator */}
-      <PriceCalculator />
 
       {/* Werkwijze / Steps Section */}
       <Steps />
