@@ -19,20 +19,20 @@ export function SolarSection() {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Image */}
-          <AnimatedSection animation="fade-right" className="relative order-2 lg:order-1">
-            <div className="relative aspect-[4/3] sm:aspect-square rounded-2xl overflow-hidden bg-panel2">
+          <AnimatedSection animation="fade-right" className="relative order-1 lg:order-1">
+            <div className="relative aspect-square rounded-2xl overflow-hidden bg-panel2">
               <Image
                 src="/solarmotorset.jpg"
                 alt="Solar motor met zonnepaneel"
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </AnimatedSection>
 
           {/* Content */}
-          <AnimatedSection animation="fade-left" className="order-1 lg:order-2">
+          <AnimatedSection animation="fade-left" className="order-2 lg:order-2">
             <div className="divider-accent mb-4" />
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-text mb-4">
               Solar motoren:{" "}
