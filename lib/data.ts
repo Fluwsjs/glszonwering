@@ -64,7 +64,7 @@ export const products: Product[] = [
       "Verlaagt geluidsoverlast aanzienlijk",
       "Verhoogt de waarde van uw woning",
     ],
-    image: "/placeholders/rolluiken.jpg",
+    image: "/rolluiken.jpg",
     gallery: [
       "/placeholders/rolluiken-1.jpg",
       "/placeholders/rolluiken-2.jpg",
@@ -93,7 +93,7 @@ export const products: Product[] = [
       "Beschermt meubels tegen UV-straling",
       "Minimalistische uitstraling",
     ],
-    image: "/placeholders/screens.jpg",
+    image: "/screens.jpg",
     gallery: [
       "/placeholders/screens-1.jpg",
       "/placeholders/screens-2.jpg",
@@ -122,7 +122,7 @@ export const products: Product[] = [
       "Koelt uw woning af",
       "Verhoogt wooncomfort",
     ],
-    image: "/placeholders/zonneschermen.jpg",
+    image: "/zonnescherm.jpg",
     gallery: [
       "/placeholders/zonneschermen-1.jpg",
       "/placeholders/zonneschermen-2.jpg",

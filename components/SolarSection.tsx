@@ -22,7 +22,7 @@ export function SolarSection() {
           <AnimatedSection animation="fade-right" className="relative order-2 lg:order-1">
             <div className="relative aspect-[4/3] sm:aspect-square rounded-2xl overflow-hidden bg-panel2">
               <Image
-                src="/placeholders/solar-motor.svg"
+                src="/solarmotorset.jpg"
                 alt="Solar motor met zonnepaneel"
                 fill
                 className="object-cover"

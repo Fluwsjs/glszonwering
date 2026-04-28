@@ -73,13 +73,17 @@ export function Header() {
           >
             {/* Mobiel logo */}
             <Image
-              src="/logomobile.png"
+              src="/logomob.png"
               alt="GLS Zonwering & Rolluiken"
-              width={866}
-              height={288}
-              className="block sm:hidden h-14 w-auto object-contain object-left max-w-[56vw]"
+              width={1000}
+              height={250}
+              className="block sm:hidden h-12 w-auto object-contain object-left max-w-[62vw]"
+              style={{
+                filter: onHomeHero ? "brightness(0) invert(1)" : "none",
+                transition: "filter 0.3s ease",
+              }}
               priority
-              sizes="56vw"
+              sizes="62vw"
             />
             {/* Desktop logo */}
             <Image
@@ -88,6 +92,10 @@ export function Header() {
               width={2508}
               height={627}
               className="hidden sm:block h-20 lg:h-24 w-auto object-contain object-left max-w-[22rem] lg:max-w-[30rem]"
+              style={{
+                filter: onHomeHero ? "brightness(0) invert(1)" : "none",
+                transition: "filter 0.3s ease",
+              }}
               priority
               sizes="(max-width: 1024px) 22rem, 30rem"
             />
