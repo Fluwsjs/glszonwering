@@ -35,6 +35,8 @@ interface FormData {
   email: string;
   plaats: string;
   product: string;
+  breedte: string;
+  hoogte: string;
   bericht: string;
   honeypot: string; // Spam protection
 }
@@ -61,6 +63,8 @@ export function QuoteFormModal({
     email: "",
     plaats: "",
     product: defaultProduct,
+    breedte: "",
+    hoogte: "",
     bericht: "",
     honeypot: "",
   });
@@ -112,20 +116,19 @@ export function QuoteFormModal({
 
     setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    // Log form data (replace with actual API call)
-    console.log("Form submitted:", {
-      naam: formData.naam,
-      telefoon: formData.telefoon,
-      email: formData.email,
-      plaats: formData.plaats,
-      product: formData.product,
-      bericht: formData.bericht,
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ...formData, type: "offerte" }),
     });
 
     setIsSubmitting(false);
+
+    if (!res.ok) {
+      alert("Er is iets misgegaan. Probeer het opnieuw of bel ons direct.");
+      return;
+    }
+
     setIsSuccess(true);
 
     // Reset after 3 seconds
@@ -138,6 +141,8 @@ export function QuoteFormModal({
         email: "",
         plaats: "",
         product: defaultProduct,
+        breedte: "",
+        hoogte: "",
         bericht: "",
         honeypot: "",
       });
@@ -294,6 +299,35 @@ export function QuoteFormModal({
                       {errors.product}
                     </p>
                   )}
+                </div>
+              </div>
+
+              <div className="space-y-1.5 sm:space-y-2">
+                <Label className="text-sm">Afmetingen (optioneel)</Label>
+                <p className="text-xs text-muted">Heeft u al gemeten? Vul de breedte en hoogte in cm in.</p>
+                <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                  <div className="space-y-1.5">
+                    <Label htmlFor="breedte" className="text-xs text-muted">Breedte (cm)</Label>
+                    <Input
+                      id="breedte"
+                      type="number"
+                      min="0"
+                      placeholder="bijv. 150"
+                      value={formData.breedte}
+                      onChange={(e) => handleChange("breedte", e.target.value)}
+                    />
+                  </div>
+                  <div className="space-y-1.5">
+                    <Label htmlFor="hoogte" className="text-xs text-muted">Hoogte (cm)</Label>
+                    <Input
+                      id="hoogte"
+                      type="number"
+                      min="0"
+                      placeholder="bijv. 180"
+                      value={formData.hoogte}
+                      onChange={(e) => handleChange("hoogte", e.target.value)}
+                    />
+                  </div>
                 </div>
               </div>
 

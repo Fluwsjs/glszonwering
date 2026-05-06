@@ -67,7 +67,7 @@ export function SolarSection() {
               </p>
               <p className="text-sm text-muted mt-1">
                 Uw interieur blijft onaangetast. Geen kabels, geen
-                wandcontactdozen, geen rommel.
+                wandcontactdozen.
               </p>
             </div>
 

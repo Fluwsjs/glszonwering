@@ -52,12 +52,6 @@ const faqItems: FAQItem[] = [
       "Wij zijn actief in heel Gelderland en Noord-Brabant. Steden waar we regelmatig komen zijn onder andere Nijmegen, Arnhem, Eindhoven, Den Bosch, Apeldoorn en omstreken. Twijfelt u? Neem contact op en we laten weten of we bij u kunnen komen.",
   },
   {
-    id: "7",
-    question: "Hoe werkt de gratis inmeting?",
-    answer:
-      "Na uw aanvraag nemen we binnen 24 uur contact op om een afspraak te maken. Onze specialist komt bij u langs, neemt nauwkeurig de maten op, bespreekt uw wensen en geeft advies. Daarna ontvangt u binnen enkele dagen een vrijblijvende offerte.",
-  },
-  {
     id: "8",
     question: "Kan ik zonwering ook huren of leasen?",
     answer:

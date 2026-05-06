@@ -127,6 +127,7 @@ export const products: Product[] = [
       "/zonnescherm/gallery-1.jpg",
       "/zonnescherm/gallery-2.jpg",
       "/zonnescherm/gallery-3.jpg",
+      "/zonnescherm/gallery-4.jpg",
     ],
     category: "zonneschermen",
   },
